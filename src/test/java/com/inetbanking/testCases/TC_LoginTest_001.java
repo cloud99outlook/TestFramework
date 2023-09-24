@@ -10,7 +10,7 @@ public class TC_LoginTest_001 extends BaseClass {
 
 	//Checked in 
 	
-	@Test
+	@Test 
 	public void LoginTest() throws InterruptedException {
 
 		LoginPage lp = new LoginPage(driver);
