@@ -8,6 +8,7 @@ import com.inetbanking.pageObjects.LoginPage;
 
 public class TC_LoginTest_001 extends BaseClass {
 
+	//Checked in 
 	
 	@Test
 	public void LoginTest() throws InterruptedException {
