@@ -16,13 +16,14 @@ import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
-
 
 import com.inetbanking.utilities.ReadConfig;
 
@@ -45,7 +46,7 @@ public class BaseClass {
 	public String firefoxdriverpath = readConfig.getFirefoxDriverPath();
 
 	// public static Logger logger=LogManager.getLogger(BaseClass.class.getName());
-	//public static Logger logger = LogManager.getLogger("ebanking");
+	// public static Logger logger = LogManager.getLogger("ebanking");
 	public static Logger logger;
 
 	@Parameters("browser")
@@ -53,8 +54,7 @@ public class BaseClass {
 	public void setup(String browser) throws InterruptedException {
 
 		logger = LogManager.getLogger(BaseClass.class);
-	
-		 
+
 		// System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")
 		// + "//Drivers//chromedriver.exe");
 		// driver = new ChromeDriver();
@@ -65,9 +65,14 @@ public class BaseClass {
 		if (browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", Chromedriverpath);
 			driver = new ChromeDriver();
+			// added code
+			ChromeOptions ChromeOptions = new ChromeOptions();
+			ChromeOptions.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
+			driver = new ChromeDriver(ChromeOptions);
+
 			logger.info("Chrome Loaded");
 			Thread.sleep(2000);
-			
+
 		}
 
 		if (browser.equalsIgnoreCase("firefox")) {
@@ -82,27 +87,28 @@ public class BaseClass {
 		logger.info("TestExecution started");
 		driver.get(baseURL);
 		Thread.sleep(2000);
-		
-		//Frames--images
+
+		// Frames--images
 		driver.switchTo().frame("gdpr-consent-notice");
-		WebElement accept= driver.findElement(By.xpath("//*[@id=\"save\"]/span[1]/div/span"));
+		WebElement accept = driver.findElement(By.xpath("//*[@id=\"save\"]/span[1]/div/span"));
 		accept.click();
 		Thread.sleep(2000);
-		
+
 		logger.info("Url is open");
-		
 
 	}
 
 	@AfterClass
 	public void teardown() {
 
-		driver.quit();
+		if (driver != null) {
+			driver.quit();
+		}
 	}
 
 	public void CaptureScreen(WebDriver driver, String tname) {
 		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		File destFile = new File(System.getProperty("user.dir") + "/Screenshots/" + tname+ ".png");
+		File destFile = new File(System.getProperty("user.dir") + "/Screenshots/" + tname + ".png");
 		try {
 			FileUtils.copyFile(srcFile, destFile);
 			System.out.println("Screenshot taken");
@@ -121,20 +127,15 @@ public class BaseClass {
 		System.out.println(timestamp);
 		return timestamp;
 	}
-	
-	
-	public boolean isAlertPresent() 
-	{ 
-	    try 
-	    { 
-	       Alert Alert = driver.switchTo().alert(); 
-	       Alert.accept();
-	        return true; 
-	    }  
-	    catch (org.openqa.selenium.NoAlertPresentException Ex) 
-	    { 
-	        return false; 
-	    }  
+
+	public boolean isAlertPresent() {
+		try {
+			Alert Alert = driver.switchTo().alert();
+			Alert.accept();
+			return true;
+		} catch (org.openqa.selenium.NoAlertPresentException Ex) {
+			return false;
+		}
 	}
 
 }

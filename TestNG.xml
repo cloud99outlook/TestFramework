@@ -8,7 +8,7 @@
  </listeners>
  
 	<test name="BankingApp Test">
-		<parameter name="browser" value="iexplorer" />
+		<parameter name="browser" value="chrome" />
 		<classes>
 			 <!-- <class name="com.inetbanking.testCases.TC_LoginTest_001" />   -->
 			 <class name="com.inetbanking.testCases.TC_UrlTest_000" /> 
