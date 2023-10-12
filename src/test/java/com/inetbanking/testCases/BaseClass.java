@@ -66,9 +66,9 @@ public class BaseClass {
 			System.setProperty("webdriver.chrome.driver", Chromedriverpath);
 			driver = new ChromeDriver();
 			// added code
-			ChromeOptions ChromeOptions = new ChromeOptions();
-			ChromeOptions.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
-			driver = new ChromeDriver(ChromeOptions);
+//			ChromeOptions ChromeOptions = new ChromeOptions();
+//			ChromeOptions.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
+//			driver = new ChromeDriver(ChromeOptions);
 
 			logger.info("Chrome Loaded");
 			Thread.sleep(2000);

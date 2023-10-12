@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-12T00:51:02 BST" name="InetBankingV1" finished-at="2023-10-12T00:51:37 BST" duration-ms="35091">
+  <suite started-at="2023-10-12T01:27:36 BST" name="InetBankingV1" finished-at="2023-10-12T01:27:54 BST" duration-ms="17672">
     <groups>
     </groups>
-    <test started-at="2023-10-12T00:51:02 BST" name="BankingApp Test" finished-at="2023-10-12T00:51:37 BST" duration-ms="35091">
+    <test started-at="2023-10-12T01:27:36 BST" name="BankingApp Test" finished-at="2023-10-12T01:27:54 BST" duration-ms="17672">
       <class name="com.inetbanking.testCases.TC_UrlTest_000">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking.testCases.TC_UrlTest_000@6db9f5a4]" started-at="2023-10-12T00:51:03 BST" name="setup" finished-at="2023-10-12T00:51:35 BST" duration-ms="32297" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking.testCases.TC_UrlTest_000@6db9f5a4]" started-at="2023-10-12T01:27:37 BST" name="setup" finished-at="2023-10-12T01:27:53 BST" duration-ms="16380" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="UrlTest()[pri:0, instance:com.inetbanking.testCases.TC_UrlTest_000@6db9f5a4]" started-at="2023-10-12T00:51:35 BST" name="UrlTest" finished-at="2023-10-12T00:51:36 BST" duration-ms="1045" status="PASS">
+        <test-method signature="UrlTest()[pri:0, instance:com.inetbanking.testCases.TC_UrlTest_000@6db9f5a4]" started-at="2023-10-12T01:27:53 BST" name="UrlTest" finished-at="2023-10-12T01:27:53 BST" duration-ms="234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UrlTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.inetbanking.testCases.TC_UrlTest_000@6db9f5a4]" started-at="2023-10-12T00:51:36 BST" name="teardown" finished-at="2023-10-12T00:51:37 BST" duration-ms="735" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.inetbanking.testCases.TC_UrlTest_000@6db9f5a4]" started-at="2023-10-12T01:27:53 BST" name="teardown" finished-at="2023-10-12T01:27:54 BST" duration-ms="623" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

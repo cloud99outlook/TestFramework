@@ -2216,3 +2216,71 @@
 [INFO ] 2023-10-12 00:51:25.029 [main] BaseClass - TestExecution started
 [INFO ] 2023-10-12 00:51:35.699 [main] BaseClass - Url is open
 [INFO ] 2023-10-12 00:51:36.808 [main] BaseClass - title is checked and test case passed
+[INFO ] 2023-10-12 01:27:37.802 [main] BaseClass - Browser started
+[DEBUG] 2023-10-12 01:27:37.939 [main] InternalLoggerFactory - Using Log4J2 as the default logging framework
+[DEBUG] 2023-10-12 01:27:37.953 [main] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+[DEBUG] 2023-10-12 01:27:37.954 [main] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+[DEBUG] 2023-10-12 01:27:37.963 [main] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@577f9109
+[DEBUG] 2023-10-12 01:27:37.984 [main] PlatformDependent0 - -Dio.netty.noUnsafe: false
+[DEBUG] 2023-10-12 01:27:37.984 [main] PlatformDependent0 - Java version: 17
+[DEBUG] 2023-10-12 01:27:37.986 [main] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+[DEBUG] 2023-10-12 01:27:37.986 [main] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+[DEBUG] 2023-10-12 01:27:37.987 [main] PlatformDependent0 - sun.misc.Unsafe.storeFence: available
+[DEBUG] 2023-10-12 01:27:37.987 [main] PlatformDependent0 - java.nio.Buffer.address: available
+[DEBUG] 2023-10-12 01:27:37.988 [main] PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+[DEBUG] 2023-10-12 01:27:37.989 [main] PlatformDependent0 - java.nio.Bits.unaligned: available, true
+[DEBUG] 2023-10-12 01:27:37.990 [main] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @5fe94a96
+[DEBUG] 2023-10-12 01:27:37.991 [main] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+[DEBUG] 2023-10-12 01:27:37.991 [main] PlatformDependent - sun.misc.Unsafe: available
+[DEBUG] 2023-10-12 01:27:37.992 [main] PlatformDependent - maxDirectMemory: 4269801472 bytes (maybe)
+[DEBUG] 2023-10-12 01:27:37.992 [main] PlatformDependent - -Dio.netty.tmpdir: C:\Users\meera\AppData\Local\Temp (java.io.tmpdir)
+[DEBUG] 2023-10-12 01:27:37.992 [main] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG] 2023-10-12 01:27:37.993 [main] PlatformDependent - Platform: Windows
+[DEBUG] 2023-10-12 01:27:37.994 [main] PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+[DEBUG] 2023-10-12 01:27:37.994 [main] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[DEBUG] 2023-10-12 01:27:37.995 [main] CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+[DEBUG] 2023-10-12 01:27:37.995 [main] PlatformDependent - -Dio.netty.noPreferDirect: false
+[DEBUG] 2023-10-12 01:27:38.003 [main] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+[DEBUG] 2023-10-12 01:27:38.023 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[DEBUG] 2023-10-12 01:27:38.023 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[DEBUG] 2023-10-12 01:27:38.249 [main] JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+[DEBUG] 2023-10-12 01:27:38.249 [main] JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+[DEBUG] 2023-10-12 01:27:38.264 [main] GlobalEventExecutor - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+[DEBUG] 2023-10-12 01:27:38.281 [main] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+[DEBUG] 2023-10-12 01:27:38.293 [main] NioEventLoop - -Dio.netty.noKeySetOptimization: false
+[DEBUG] 2023-10-12 01:27:38.293 [main] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] 2023-10-12 01:27:38.351 [main] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+[DEBUG] 2023-10-12 01:27:38.351 [main] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+[DEBUG] 2023-10-12 01:27:38.351 [main] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+[DEBUG] 2023-10-12 01:27:38.351 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
+[DEBUG] 2023-10-12 01:27:38.351 [main] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
+[DEBUG] 2023-10-12 01:27:38.352 [main] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+[DEBUG] 2023-10-12 01:27:38.352 [main] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+[DEBUG] 2023-10-12 01:27:38.352 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG] 2023-10-12 01:27:38.352 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG] 2023-10-12 01:27:38.352 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[DEBUG] 2023-10-12 01:27:38.352 [main] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
+[DEBUG] 2023-10-12 01:27:38.353 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[DEBUG] 2023-10-12 01:27:38.369 [main] ByteBufUtil - -Dio.netty.allocator.type: pooled
+[DEBUG] 2023-10-12 01:27:38.369 [main] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+[DEBUG] 2023-10-12 01:27:38.369 [main] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[DEBUG] 2023-10-12 01:27:38.820 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.processId: 12704 (auto-detected)
+[DEBUG] 2023-10-12 01:27:38.826 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv4Stack: false
+[DEBUG] 2023-10-12 01:27:38.826 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv6Addresses: false
+[DEBUG] 2023-10-12 01:27:38.851 [Forwarding newSession on session null to remote] NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[DEBUG] 2023-10-12 01:27:38.852 [Forwarding newSession on session null to remote] NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[DEBUG] 2023-10-12 01:27:38.917 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.machineId: 00:15:5d:ff:fe:58:01:82 (auto-detected)
+[DEBUG] 2023-10-12 01:27:38.985 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+[DEBUG] 2023-10-12 01:27:38.985 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+[DEBUG] 2023-10-12 01:27:38.986 [AsyncHttpClient-1-2] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@380df824
+[DEBUG] 2023-10-12 01:27:39.021 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[DEBUG] 2023-10-12 01:27:39.021 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.ratio: 8
+[DEBUG] 2023-10-12 01:27:39.022 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.chunkSize: 32
+[DEBUG] 2023-10-12 01:27:39.022 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.blocking: false
+[DEBUG] 2023-10-12 01:27:39.022 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+[DEBUG] 2023-10-12 01:27:40.262 [AsyncHttpClient-1-2] Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+[DEBUG] 2023-10-12 01:27:40.452 [main] ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0xc45bd0019bc27b3f
+[INFO ] 2023-10-12 01:27:42.650 [main] BaseClass - Chrome Loaded
+[INFO ] 2023-10-12 01:27:44.654 [main] BaseClass - TestExecution started
+[INFO ] 2023-10-12 01:27:53.544 [main] BaseClass - Url is open
+[INFO ] 2023-10-12 01:27:53.789 [main] BaseClass - title is checked and test case passed
